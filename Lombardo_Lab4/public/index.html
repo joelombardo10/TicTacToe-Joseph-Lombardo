@@ -1,0 +1,40 @@
+<!-- Joseph Lombardo - Project 4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Lombardo - Multiplayer Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header>
+            <p class="course">CS 310 - Introduction to Web Development</p>
+            <h1>Joseph Lombardo's Tic-Tac-Toe</h1>
+            <p class="subtitle">Project 4 - Multiplayer</p>
+        </header>
+
+        <section class="game-card" aria-label="Tic-Tac-Toe game">
+            <form id="login">
+                <label>Name <input id="nameInput" maxlength="30" placeholder="First name" required></label>
+                <label>Password <input id="passwordInput" type="password" placeholder="Password" required></label>
+                <button id="joinBtn" type="submit" disabled>Join Game</button>
+            </form>
+            <div id="connection" role="status">Connecting...</div>
+            <div id="error" role="alert"></div>
+            <div id="role">Join to play or spectate.</div>
+            <div id="players"></div>
+            <div id="status" role="status" aria-live="polite">Waiting for two players...</div>
+            <canvas id="gameCanvas" width="600" height="600" aria-label="Three by three Tic-Tac-Toe game board">
+                Your browser does not support HTML canvas.
+            </canvas>
+            <button id="resetBtn" type="button" disabled>Reset Game</button>
+            <p class="instructions">The first two people to join play X and O. Everyone else watches.<br>Click open squares on your turn. Get three in a row to win!<br>If a player leaves, the board resets. A new person can join the open spot.</p>
+        </section>
+
+        <footer>Created by Joseph Lombardo - Project 4</footer>
+    </main>
+    <script src="client.js"></script>
+</body>
+</html>
