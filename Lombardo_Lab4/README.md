@@ -11,7 +11,7 @@
 `secret123`
 
 ## Play online
-Add your Render URL here after deploying: [YOUR RENDER URL]
+Render URL: https://tictactoe-joseph-lombardo.onrender.com 
 
 ## Deploy on Render
 - Create a GitHub repository and upload the project files.
@@ -20,5 +20,4 @@ Add your Render URL here after deploying: [YOUR RENDER URL]
 - Start command: `npm start`
 - Deploy the service, then replace the placeholder above with your Render URL.
 
-The server uses Render's assigned `PORT` when deployed and port 3000 locally.
-The client automatically uses `ws://` locally and `wss://` when the site uses HTTPS.
+
