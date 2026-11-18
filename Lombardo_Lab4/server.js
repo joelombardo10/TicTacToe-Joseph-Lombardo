@@ -1,5 +1,5 @@
 // Joseph Lombardo - Project 4
-// Run npm.cmd init -y, npm.cmd install express ws, then node server.js.
+
 const express = require('express');
 const http = require('http');
 const path = require('path');
